@@ -25,33 +25,27 @@ requirements:
     - pip
   run:
     - python
-    - astropy>=4.3.1  # Unit aware calculations
-    - astroquery>=0.4.6  # to fetch HITRAN databases
-    - beautifulsoup4>=4.10.0 # parse ExoMol website
-    - cantera>=2.5.1   # for chemical equilibrium computations
+    - astropy
+    - astroquery
+    - beautifulsoup4 
+    - cantera  
     - configparser
-#- cython          # Not needed, see #647
-    - habanero>=1.2.0  # CrossRef API to retrieve data from doi
-    - h5py>=3.2.1   # load HDF5
-    - joblib  # for parallel loading of SpecDatabase
-    - lmfit  # for new fitting modules
+    - habanero
+    - h5py
+    - joblib  
+    - lmfit  
     - matplotlib
-    - numpy
-    - numba  # just-in-time compiler
+    - numba  
     - pandas
-    - plotly>=2.5.1  # for line survey HTML output
-#- progressbar2    # used in vaex
+    - plotly
     - psutil # to get user RAM
     - pytables # for pandas to HDF5 export
-    - scipy>=1.4.0
+    - scipy
     - seaborn   # other matplotlib themes
     - termcolor  # terminal colors
     - specutils
-#- vaex-core>=4.17.0   # load HDF5 files  (version needed to fix https://github.com/radis/radis/issues/598)
-#- vaex-hdf5
-#- vaex-viz
     - pip
-      - {{ pin_compatible('numpy') }}
+    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
