@@ -20,7 +20,6 @@ requirements:
     - {{ stdlib("c") }}
   host:
     - python
-    - numpy
     - pip
   run:
     - python
@@ -34,17 +33,16 @@ requirements:
     - joblib  
     - lmfit  
     - matplotlib-base
+    - numpy
     - numba  
     - pandas
     - plotly
-    - psutil # to get user RAM
-    - pytables # for pandas to HDF5 export
+    - psutil 
+    - pytables 
     - scipy
-    - seaborn   # other matplotlib themes
-    - termcolor  # terminal colors
+    - seaborn   
+    - termcolor  
     - specutils
-    - pip
-    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
