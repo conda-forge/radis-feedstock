@@ -34,7 +34,7 @@ requirements:
     - h5py
     - joblib  
     - lmfit  
-    - matplotlib
+    - matplotlib-base
     - numba  
     - pandas
     - plotly
