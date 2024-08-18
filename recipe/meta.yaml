@@ -50,7 +50,7 @@ requirements:
     - scipy >=1.4.0
     - vaex
     - lmfit
-    - numpy
+    - numpy >=1.22.0
 
 test:
   imports:
