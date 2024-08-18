@@ -48,7 +48,6 @@ requirements:
     - psutil
     - seaborn
     - scipy >=1.4.0
-    - vaex
     - lmfit
     - numpy >=1.22.0
 
