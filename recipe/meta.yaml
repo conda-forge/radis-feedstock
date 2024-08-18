@@ -19,11 +19,13 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
   host:
+    # build time dependencies
     - python
     - cython
     - numpy
     - pip
   run:
+    # runtime dependencies
     - python
     - astropy
     - astroquery >=0.3.9
