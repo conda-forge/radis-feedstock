@@ -18,8 +18,10 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
-  host: 
+  host:
     - python
+    - cython
+    - numpy
     - pip
   run:
     - python
@@ -49,7 +51,7 @@ requirements:
     - seaborn
     - scipy >=1.4.0
     - lmfit
-    - numpy >=1.22.0
+    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
@@ -63,7 +65,6 @@ about:
   summary: A fast line-by-line code for high-resolution infrared molecular spectra
   doc_url: https://radis.readthedocs.io/en/latest/
   dev_url: https://github.com/radis/radis
-
 
 extra:
   recipe-maintainers:
