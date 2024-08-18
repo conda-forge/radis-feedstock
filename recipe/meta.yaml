@@ -18,10 +18,8 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
-  host:
+  host: 
     - python
-    - cython
-    - numpy
     - pip
   run:
     - python
@@ -52,7 +50,7 @@ requirements:
     - scipy >=1.4.0
     - vaex
     - lmfit
-    - {{ pin_compatible('numpy') }}
+    - numpy
 
 test:
   imports:
